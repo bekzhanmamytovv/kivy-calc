@@ -9,14 +9,13 @@ requirements = python3,kivy==2.3.0
 orientation = portrait
 osx.kivy_version = 2.3.0
 
+android.accept_sdk_license = True
+android.api = 33
+android.minapi = 21
+android.ndk = 25b
+android.build_tools_version = 33.0.2
+android.archs = arm64-v8a
+
 [buildozer]
 log_level = 2
 warn_on_root = 1
-
-[android]
-accept_sdk_license = True
-api = 33
-minapi = 21
-ndk_version = 25c
-archs = arm64-v8a, armeabi-v7a
-permissions = INTERNET

@@ -24,7 +24,11 @@ jobs:
       - name: Install buildozer and cython
         run: |
           pip install --upgrade pip
-          pip install --upgrade buildozer cython
+          pip install --upgrade "buildozer>=1.5.0" cython
+
+      - name: Accept Android Licenses
+        run: |
+          yes | sdkmanager --licenses || true
 
       - name: Build APK
         run: buildozer -v android debug
