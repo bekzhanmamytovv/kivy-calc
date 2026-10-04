@@ -1,5 +1,5 @@
 [app]
-title = Beksfly
+title = Beksfly Notes
 package.name = beksfly
 package.domain = org.beksfly
 source.dir = .
